@@ -3,7 +3,7 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/OpenZeppelin?style=plastic&logo=twitter)](https://twitter.com/OpenZeppelin)
 [![OpenZeppelin Forum](https://img.shields.io/badge/Ethernaut%20Forum%20-discuss-blue?style=plastic&logo=discourse)](https://forum.openzeppelin.com/tag/ethernaut)
 
-Ethernaut는 [overthewire](https://overthewire.org)에서 영감을 받은 Web3/Solidity 기반 워게임으로, 이더리움 가상 머신(EVM)에서 플레이됩니다. 각 레벨은 '해킹'해야 하는 스마트 Smart Contract으로 구성되어 있습니다.
+Ethernaut는 [overthewire](https://overthewire.org)에서 영감을 받은 Web3/Solidity 기반 워게임으로, 이더리움 가상 머신(EVM)에서 플레이됩니다. 각 레벨은 '해킹'해야 하는 Smart Contract으로 구성되어 있습니다.
 
 이 게임은 이더리움 학습을 위한 도구이자 역사적인 해킹 사례를 레벨로 체계화한 플랫폼입니다. 레벨 제한이 없으며 순서에 구애받지 않고 자유롭게 플레이할 수 있습니다.
 
@@ -19,10 +19,10 @@ Ethernaut는 [overthewire](https://overthewire.org)에서 영감을 받은 Web3/
 로컬에서 Ethernaut를 실행/배포하려면 다음 세 가지 구성 요소가 필요합니다:
 
 1. **테스트 네트워크**: Ganache, Hardhat Network, Geth 등 로컬에서 실행되는 테스트넷
-2. **Smart Contract 배포**: 스마트 Smart Contract을 로컬 테스트넷에 배포
+2. **Smart Contract 배포**: Smart Contract을 로컬 테스트넷에 배포
 3. **클라이언트/프론트엔드**: 로컬에서 실행되는 React 앱 (localhost:3000 접속)
 
-### 로컬 실행 절차
+### 로컬 환경 구축 절차
 
 0. **Node.js 버전 확인**:  
    호환되는 Node.js 버전을 사용하세요. `nvm`을 사용한다면 루트 디렉토리에서 `nvm use`를 실행하여 적절한 버전을 선택합니다.
@@ -51,6 +51,7 @@ Ethernaut는 [overthewire](https://overthewire.org)에서 영감을 받은 Web3/
 
 5. **네트워크 설정**:  
    `client/src/constants.js` 파일에서 `ACTIVE_NETWORK`를 `NETWORKS.LOCAL`로 설정합니다.
+   > 현재 커밋에서 기본으로 되어있음
 
 6. **Smart Contract 배포**:
     ```
@@ -85,7 +86,7 @@ yarn build:ethernaut
 ### 배포
 
 **로컬 네트워크 배포**:  
-기본적으로 `yarn deploy:contracts`를 실행하면 `localhost:8545`에 모든 계약이 배포되며,  
+기본적으로 `yarn deploy:contracts`를 실행하면 `localhost:8545`에 모든 컨트랙트가 배포되며,  
 `deploy.local.json` 파일에서 각 레벨 주소를 확인할 수 있습니다.
 
 **Sepolia 네트워크 배포**:  
