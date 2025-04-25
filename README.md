@@ -1,7 +1,4 @@
 # Ethernaut
- 
-[![Twitter Follow](https://img.shields.io/twitter/follow/OpenZeppelin?style=plastic&logo=twitter)](https://twitter.com/OpenZeppelin)
-[![OpenZeppelin Forum](https://img.shields.io/badge/Ethernaut%20Forum%20-discuss-blue?style=plastic&logo=discourse)](https://forum.openzeppelin.com/tag/ethernaut)
 
 Ethernaut는 [overthewire](https://overthewire.org)에서 영감을 받은 Web3/Solidity 기반 워게임으로, 이더리움 가상 머신(EVM)에서 플레이됩니다. 각 레벨은 '해킹'해야 하는 Smart Contract으로 구성되어 있습니다.
 
@@ -13,6 +10,10 @@ Ethernaut는 [overthewire](https://overthewire.org)에서 영감을 받은 Web3/
 [ethernaut.openzeppelin.com](https://ethernaut.openzeppelin.com)
 
 ---
+
+## 빠른 시작 (quick start)
+
+`sh run.sh`
 
 ## 설치 및 빌드
 
